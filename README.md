@@ -4,6 +4,8 @@
 Blender Add-on to convert Alpha image(s) to mesh!  
 For Concept Art, Visual FX & any rough 3d sketching / Object Photo Mapping purposes  
 
+Download (Final) Release Zip --->
+
 (Old) Video Demo [Here!](https://youtu.be/AGhqm0wEkkM)  
 Instructions, Release Log etc:  [Here!](https://ke-code.xyz/scripts/kei2m.html)  
 
