@@ -1,6 +1,8 @@
 # Image2Mesh [keI2M] Standard Version
 *AKA; Old, Unsupported &amp; Free Version* - Check out links for newer Pro version [Here!](https://ke-code.xyz/scripts/kei2m.html)
 
+![i2m_sm](https://github.com/kedepot/i2m-std/assets/95410139/be0b229e-de68-4aa5-9ef4-4a76724a7fdc)
+
 Blender Add-on to convert Alpha image(s) to mesh!  
 For Concept Art, Visual FX & any rough 3d sketching / Object Photo Mapping purposes  
 
