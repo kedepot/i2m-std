@@ -52,7 +52,6 @@ kei2m_version = 1.306
 
 
 def is_bversion(req_ver):
-    """Is current Blender version the required version (in ### digits)"""
     bv = int("".join([str(i) for i in bpy.app.version]))
     if bv < req_ver:
         return False
