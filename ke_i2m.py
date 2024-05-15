@@ -39,7 +39,7 @@ bl_info = {
     "name": "kei2m",
     "author": "Kjell Emanuelsson",
     "category": "Import-Export",
-    "version": (1, 3, 0, 6),
+    "version": (1, 3, 0, 7),
     "blender": (2, 80, 0),
     "location": "Viewport / N-Panel / kei2m",
     "warning": "",
@@ -48,12 +48,12 @@ bl_info = {
 }
 
 
-kei2m_version = 1.306
+kei2m_version = 1.307
 
 
 def is_bversion(req_ver):
-    bv = int("".join([str(i) for i in bpy.app.version]))
-    if bv < req_ver:
+    """Is current Blender version the required version (as int: #### )"""
+    if int("".join([str(i) for i in bpy.app.version]).ljust(4, '0')) < req_ver:
         return False
     return True
 
@@ -311,7 +311,7 @@ class KeI2M(Operator):
         if self.vcolor:
             layout.prop(self, "vcthreshold", expand=True)
         
-        if not is_bversion(410):
+        if not is_bversion(4100):
             layout.prop(self, "shade_smooth", toggle=True)
         
         if not c2m_mode:
@@ -691,7 +691,7 @@ class KeI2M(Operator):
             self.reduce = self.c2m_reduce
             self.c2m = True
 
-        if not is_bversion(410):
+        if not is_bversion(4100):
             self.shade_smooth = False
 
         # Mouse progress meter: Fake! just to show something is happening...
